@@ -18,6 +18,16 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Movement.CalcMovement(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Time.deltaTime);
     }
 
+    //for player collision with miso
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Miso"))
+        {
+            Destroy(other.gameObject); //miso soup disappears 
+                                       // score += 10;
+                                       // Debug.Log("Score: " + score);
+        }
+    }
 
 }
 
