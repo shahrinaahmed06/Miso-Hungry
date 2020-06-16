@@ -2,7 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    
+    //declare variables
     public float moveSpeed=150.0f ;
     public Movement Movement;
     private Rigidbody2D rb;
@@ -23,20 +23,22 @@ public class PlayerController : MonoBehaviour
         Vmovement = Input.GetAxisRaw("Vertical");
         //flips avatar sprite for horizontal movement
         flip(Hmovement);
+        //calls method from movement class to implmement horizontal and vertical movement
         rb.velocity = Movement.CalcMovement(Hmovement, Vmovement, Time.deltaTime);
  
     }
 
-    //for player collision with other sprites
-
+    //player collision with other sprites
      private void OnTriggerEnter2D(Collider2D other)
     {
         //collectible sprites: miso, leek, spoon
         //miso sprite collision
         if (other.gameObject.name.Equals("Miso_sprite"))
         {
+            //produce sound effect to warn player collision occurred
            Instantiate(Misosound, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
+            //sprite disappear as it is collected
+            Destroy(other.gameObject); 
         }
 
         //leek sprite collision
