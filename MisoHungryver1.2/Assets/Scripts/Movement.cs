@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-//for player controller : movement
+//for player controller : movement 
 public class Movement
 {
     public float moveSpeed;
@@ -19,7 +19,4 @@ public class Movement
 
         return new Vector2(horizontal_movement, vertical_movement);
     }
-    
-
-
 }
