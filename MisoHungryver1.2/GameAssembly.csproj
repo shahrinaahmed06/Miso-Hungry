@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\character.cs" />
     <Compile Include="Assets\Scripts\charactergenerator.cs" />
     <Compile Include="Assets\Scripts\Checkout.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\method.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
