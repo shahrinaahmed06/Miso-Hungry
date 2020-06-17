@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 
+//This class implements actions and attributes of the player sprite.
+//-player movement
+//-collision with other sprites
+
 public class PlayerController : MonoBehaviour
 {
     //declare variables
     public float moveSpeed=150.0f ;
-    public Movement Movement;
+    public Movement movement;
     private Rigidbody2D rb;
     public GameObject Misosound;
     public GameObject Obstaclesound;
@@ -14,7 +18,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Movement = new Movement(moveSpeed);
+        movement = new Movement(moveSpeed);
     }
     void FixedUpdate()
     {
@@ -23,8 +27,8 @@ public class PlayerController : MonoBehaviour
         Vmovement = Input.GetAxisRaw("Vertical");
         //flips avatar sprite for horizontal movement
         flip(Hmovement);
-        //calls method from movement class to implmement horizontal and vertical movement
-        rb.velocity = Movement.CalcMovement(Hmovement, Vmovement, Time.deltaTime);
+        //calls method from movement class to implement horizontal and vertical movement
+        rb.velocity = movement.CalcMovement(Hmovement, Vmovement, Time.deltaTime);
  
     }
 
@@ -63,10 +67,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //method to flip character facing the direction it is moving in horizontal axis
+    //method to flip character in facing the direction it is moving in horizontal axis
     public void flip(float move)
     {
-
+        
         if (move > 0 && !faceRight || move < 0 && faceRight)
         {
             faceRight = !faceRight;
