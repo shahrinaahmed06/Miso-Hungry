@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1409,6 +1410,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1558,13 +1560,13 @@ PrefabInstance:
         type: 3}
       propertyPath: Pausemenu
       value: 
-      objectReference: {fileID: 452719322560950629, guid: 5d2e552d49e2c2647b58a2d985aebf12,
+      objectReference: {fileID: 6668477592267201851, guid: 57852e1bb7b3c374d9314c26b2db69ce,
         type: 3}
     - target: {fileID: 2364512612260510944, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: PauseButton
       value: 
-      objectReference: {fileID: 1407107413802883061, guid: e478f2d360eb25141abc2942488975b6,
+      objectReference: {fileID: 6034315290617884419, guid: 016fdfd0fd202e940ab05debc97ff583,
         type: 3}
     - target: {fileID: 2364512612260510947, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
