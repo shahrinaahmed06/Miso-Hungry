@@ -69,6 +69,11 @@ public class TimerCountdown : MonoBehaviour
 
     }
 
+    public void MainMenu()//manin menu loaded here
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Main_Menu");
+    }
     public void QuitGame()//function for quit game
     {
         Debug.Log("Quit game...");
