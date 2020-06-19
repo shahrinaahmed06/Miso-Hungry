@@ -28,13 +28,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void MainMenu()//manin menu need to be loaded here
+    public void MainMenu()//manin menu loaded here
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Main_Menu");
     }
 
-    public void QuitGame()//Quiting game need to be loaded here
+    public void QuitGame()//Quiting game loaded here
     {
         Debug.Log("Quit game...");
         Application.Quit();

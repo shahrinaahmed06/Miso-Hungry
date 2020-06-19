@@ -17,6 +17,12 @@ public class GameOver : MonoBehaviour
        
     }
 
+    public void MainMenu()//manin menu loaded here
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Main_Menu");
+    }
+
     // Update is called once per frame
     public void Quit()
     {
