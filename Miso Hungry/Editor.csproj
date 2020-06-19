@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\ObstacleTest.cs" />
     <Compile Include="Assets\Editor\PlayerMovementTest.cs" />
+    <Compile Include="Assets\Editor\TimerTest.cs" />
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>C:/Users/Admin/Desktop/Miso_Hungry/Miso-Hungry/Miso Hungry/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>

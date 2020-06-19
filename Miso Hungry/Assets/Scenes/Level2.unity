@@ -1532,12 +1532,12 @@ PrefabInstance:
     - target: {fileID: 795810030330821017, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 684
+      value: 335.7
       objectReference: {fileID: 0}
     - target: {fileID: 795810030330821017, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 279
+      value: 111.599976
       objectReference: {fileID: 0}
     - target: {fileID: 2364512610896258652, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
@@ -1547,12 +1547,12 @@ PrefabInstance:
     - target: {fileID: 2364512612007262022, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 684
+      value: 335.7
       objectReference: {fileID: 0}
     - target: {fileID: 2364512612007262022, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 321
+      value: 141.59998
       objectReference: {fileID: 0}
     - target: {fileID: 2364512612260510944, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
@@ -1679,12 +1679,12 @@ PrefabInstance:
     - target: {fileID: 2364512612414875372, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 260
+      value: 143.79999
       objectReference: {fileID: 0}
     - target: {fileID: 2364512612414875372, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -709
+      value: -369.6
       objectReference: {fileID: 0}
     - target: {fileID: 2364512612414875373, guid: 323b303d1529f46488597d9aafe3b9b4,
         type: 3}
@@ -1700,6 +1700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 0.07863116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654629886930356988, guid: 323b303d1529f46488597d9aafe3b9b4,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 323b303d1529f46488597d9aafe3b9b4, type: 3}
