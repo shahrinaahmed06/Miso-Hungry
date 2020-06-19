@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pos1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132131279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18918379, y: -0.16603664, z: -9.808789}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5765268, y: 1.6603659, z: 1}
   m_Children: []
   m_Father: {fileID: 3932414735493944367}
@@ -42,7 +42,7 @@ GameObject:
   m_Layer: 0
   m_Name: Pos2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 3932414735493944361}
   - component: {fileID: 3932414735493944362}
   - component: {fileID: 3932414735493944363}
+  - component: {fileID: 1587175732}
   m_Layer: 0
   m_Name: wasabi_obstacle
   m_TagString: Obstacle
@@ -242,3 +243,20 @@ MonoBehaviour:
   pos1: {fileID: 132131280}
   pos2: {fileID: 1815089136}
   startPos: {fileID: 132131280}
+--- !u!114 &1587175732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3932414735493944356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9367bb83e11ad7e4cb235ae66ed71d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target1: {fileID: 132131280}
+  Target2: {fileID: 1815089136}
+  StartPos: {fileID: 132131280}
+  Offset: 0.05
+  Sp: 5

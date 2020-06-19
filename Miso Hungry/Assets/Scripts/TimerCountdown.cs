@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+/*
+ * Author: Shahrina  Ahmed
+ * 17999929
+ * 
+ * This is a script for activate time and end level menu.
+ * When timer reaches at 0 it will activate the end level menu with restart and quit button.
+ * Restart button start the level and quit button exit the game.
+ */
 
 public class TimerCountdown : MonoBehaviour
 {
 
-    public GameObject textDisplay;
-    public int secondsLeft = 20;
+    public GameObject textDisplay;//gameobject for displaying time
+    public GameObject EndMenu;//gameobject end level menu
+    public int secondsLeft = 20;//seconds for level
     public bool takingAway = false;
     void Start()
     {
@@ -36,10 +45,12 @@ public class TimerCountdown : MonoBehaviour
             textDisplay.GetComponent<Text>().text = "00:0" + secondsLeft;
 
         }
-        if (secondsLeft <= 0)
+        if (secondsLeft <= 0)//when timer reaches to 0 sec
         {
-            SceneManager.LoadScene("GameOver");
-        
+            
+            EndMenu.SetActive(true);//activate the end level menu
+            Time.timeScale = 0;// stops scene 
+
         }
 
         else
@@ -47,5 +58,21 @@ public class TimerCountdown : MonoBehaviour
             textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
         }
         takingAway = false;
+    }
+
+    public void ReStart()//function to resatrt the level
+    {
+        EndMenu.SetActive(false);//deactivate the end level menu
+        Time.timeScale = 1;/// start scene 
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);//return the level played level.
+
+    }
+
+    public void QuitGame()//function for quit game
+    {
+        Debug.Log("Quit game...");
+        Application.Quit();//quit the whole application
+
     }
 }

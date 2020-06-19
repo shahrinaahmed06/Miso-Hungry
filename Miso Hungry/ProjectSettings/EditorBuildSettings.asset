@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: 6dc7237016c140c4ca107123484d1856
+  - enabled: 1
+    path: Assets/Scenes/Change_Avatar.unity
+    guid: c909ddda324d2644a953a4bc7edac416
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 808a186a517afd344b17a5c4dcaee607
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 97a4c7e4b88c4c048a91826919139739
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 339778ef11859bb49b1e3e29df0209de
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 3de19c338d140a84f85918678ce5d9f1
-  - enabled: 1
-    path: Assets/Prefabs/Level1.unity
-    guid: 07c6149bc416c174f905242ca38b276d
   m_configObjects: {}

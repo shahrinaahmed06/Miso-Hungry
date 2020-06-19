@@ -7,11 +7,14 @@ public class GameOver : MonoBehaviour
 {
 
     public GameObject Gameover;
+   
     // Start is called before the first frame update
+
     public void ReStart()
     {
-        Time.timeScale = 1;
+          Time.timeScale = 1;
         SceneManager.LoadScene("Level1");
+       
     }
 
     // Update is called once per frame

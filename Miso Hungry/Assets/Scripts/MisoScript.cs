@@ -6,7 +6,7 @@ public class MisoScript : MonoBehaviour
 {
     public int score = 0;
     //when player and miso soup collision occurs
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Triggered!");
         Destroy(gameObject); //miso soup disappears 
