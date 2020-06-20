@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         //calls method from movement class to implmement horizontal and vertical movement
         rb.velocity = Movement.CalcMovement(Hmovement, Vmovement, Time.deltaTime);
         
-        if (Score.score < 0)
+        if (Score.score <= 0)
         {
             EndMenu.SetActive(true);
         }

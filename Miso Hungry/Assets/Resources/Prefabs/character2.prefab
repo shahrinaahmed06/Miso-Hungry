@@ -153,4 +153,4 @@ MonoBehaviour:
     type: 3}
   Hmovement: 150
   Vmovement: 150
-  EndMenu: {fileID: 8323633375374070341, guid: 4778f8c256c9a1444814cccbdef14a5d, type: 3}
+  EndMenu: {fileID: 2173949840207622086, guid: 00dbabd588e1d7544b3a256e98fcf900, type: 3}
