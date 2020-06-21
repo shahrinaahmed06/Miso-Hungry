@@ -40,20 +40,18 @@ public class TimerCountdown : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         secondsLeft -= 1;
-        if(secondsLeft < 10)
+        if ((secondsLeft < 10)&&(Score.score>0))
         {
             textDisplay.GetComponent<Text>().text = "00:0" + secondsLeft;
 
         }
-        if (secondsLeft <= 0)//when timer reaches to 0 sec
+        if ((secondsLeft <= 0)||(Score.score<0))//when timer reaches to 0 sec
         {
-            
             EndMenu.SetActive(true);//activate the end level menu
             Time.timeScale = 0;// stops scene 
-
         }
 
-        else
+        else 
         {
             textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
         }
