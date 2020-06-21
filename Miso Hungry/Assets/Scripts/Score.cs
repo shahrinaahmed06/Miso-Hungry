@@ -13,6 +13,7 @@ public class Score : MonoBehaviour
         score = 0;
     }
 
+   void Update()
    {
         if (score >= 0)
         {
