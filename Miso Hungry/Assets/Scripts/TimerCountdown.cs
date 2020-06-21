@@ -40,7 +40,7 @@ public class TimerCountdown : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         secondsLeft -= 1;
-        if ((secondsLeft < 10)&&(Score.score>0))
+        if ((secondsLeft < 10)&&(Score.score>=0))
         {
             textDisplay.GetComponent<Text>().text = "00:0" + secondsLeft;
 
