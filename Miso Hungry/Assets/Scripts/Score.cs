@@ -13,8 +13,16 @@ public class Score : MonoBehaviour
         score = 0;
     }
 
-    void Update()
-    {
-        scoreText.text = "Score: " + score;
+   {
+        if (score >= 0)
+        {
+        scoreText.text = "score: " + score;
+
+        }
+        else if(score < 0)
+        {
+            score = -1;
+            scoreText.text = "score: 0";
+        }
     }
 }
