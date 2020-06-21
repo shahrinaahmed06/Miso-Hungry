@@ -51,7 +51,7 @@ public class TimerCountdown : MonoBehaviour
             Time.timeScale = 0;// stops scene 
         }
 
-        else if ((secondsLeft>10)&&(Score.score>0))
+        else
         {
             textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
         }
