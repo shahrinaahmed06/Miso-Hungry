@@ -8,9 +8,17 @@ public class Checkout : MonoBehaviour
     private int loadNextLevel;
     private int index;
 
+    bool CheckPlayerTag(string STRING)
+    {
+        if(STRING.Equals("Player"))
+        {
+            return true;
+        }
+        return false;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (CheckPlayerTag(other.gameObject.tag))
         {
             //get next scene, level 1
             loadNextLevel = SceneManager.GetActiveScene().buildIndex + 1;
