@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Change_Avatar.unity
-  isLoaded: 1
-  isActive: 1
