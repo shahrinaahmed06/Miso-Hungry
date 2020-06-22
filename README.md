@@ -12,11 +12,6 @@ Miso Hungry Game revolves around the player collecting miso and other ingredient
 There are three levels in which level 1 serves as tutorial level while level 2 and 3 is where player begins their challenge! 
 Each level has their own difficulty level based on the time limit, amount of collectible sprites and obstacle. Please read the game rules!
 
-  Level 1 (Tutorial): 25 seconds
-  
-  Level 2 : 20 seconds
-  
-  Level 3 : 15 seconds
 
 
-put game screenshots here
+Please refer to "Miso Hungry" folder for final version of project.
