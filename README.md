@@ -22,6 +22,21 @@ Please refer to "Miso Hungry" folder for final version of project. <br/><br/>
 
 **Game Overview**
 
+- **Game Controls** <br/>
+ To move the avatar, use the arrow keys on the keyboard (up, down, right and left) accordingly.
+ 
+ - **Game Features** <br/>
+Menu and levels selection  <br/>
+Collect miso and ingredients  <br/>
+Evade moving obstacles   <br/>
+Pause button <br/>
+Timer display <br/>
+Sound effects and game music <br/>
+Checkout to proceed to next level <br/>
+Change avatar <br/>
+Mute music option <br/>
+Score display <br/>
+
 **1. Main Menu** <br/>
 When game loads, main menu is displayed. 
 - Play button: This will display levels and avatar selection menu.
